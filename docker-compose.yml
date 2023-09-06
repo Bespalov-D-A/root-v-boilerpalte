@@ -1,0 +1,56 @@
+version: '3'
+services:
+  v_client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./client:/app
+    env_file:
+      - .env
+    ports:
+      - 8081:3001
+
+  v_server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    volumes:
+      - ./server:/server
+    env_file:
+      - .env
+    ports:
+      - 5000:5000
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - v_db
+
+  v_db:
+    image: postgres:15.3
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - 4001:5432
+    volumes:
+      - ./database:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 5001:8080
+
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - 80:80
+    depends_on:
+      - v_db
+      - v_client
+      - v_server
