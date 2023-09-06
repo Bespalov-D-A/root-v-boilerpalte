@@ -6,14 +6,18 @@ This template is ideal for use with root-v-boilerpalte, although you can use it 
 If you are using a combination with React-V-Boilerpalte, read [HERE](https://github.com/Bespalov-D-A/root-v-boilerpalte)
  how to combine these Boilerpaltes.
 #####  Using
-- Clone the current repository,
+- Clone the current repository
+- Rename the .example.env file to .env
 - create a 'client' folder and deploy the contents of [React-v-boilerpalte](https://github.com/Bespalov-D-A/React-v-boilerplate) there,
-- create a 'server' folder and deploy the contents of [NestJS-v-boilerpalte](https://github.com/Bespalov-D-A/NestJS-v-boilerplate) there.
-- The final structure should be like this:  
-THIS_REPOSITORY/server/  
+- create a 'server' folder and deploy the contents of [NestJS-v-boilerpalte](https://github.com/Bespalov-D-A/NestJS-v-boilerplate) there. 
+- The final structure should be like this:
+THIS_REPOSITORY/server/
 THIS_REPOSITORY/client/
  - Go to the 'client' folder and run ```npm i```
+ Rename the .example.env file to .env
  - Go to the 'server' folder and run ```npm i```
+ Rename the .example.env file to .env
+The values for POSTGRES_DB, POSTGRES_USER, and POSTGRES_PASSWORD should match the values from .env in root-v-boilerplate
  - Execute the command ```docker-compose build```
  - Launch the application using ```docker-compose up```
   
