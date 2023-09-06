@@ -10,7 +10,7 @@ If you are using a combination with React-V-Boilerpalte, read [HERE](https://git
 - create a 'client' folder and deploy the contents of [React-v-boilerpalte](https://github.com/Bespalov-D-A/React-v-boilerplate) there,
 - create a 'server' folder and deploy the contents of [NestJS-v-boilerpalte](https://github.com/Bespalov-D-A/NestJS-v-boilerplate) there.
 - The final structure should be like this:
-THIS_REPOSITORY/server/
+THIS_REPOSITORY/server/  
 THIS_REPOSITORY/client/
  - Go to the 'client' folder and run ```npm i```
  - Go to the 'server' folder and run ```npm i```
