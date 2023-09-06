@@ -13,7 +13,7 @@ THIS_REPOSITORY/client/
  - Go to the 'client' folder and run ```npm i```
  Rename the .example.env file to .env
  - Go to the 'server' folder and run ```npm i```
- Rename the .example.env file to .env
+ Rename the .example.env file to .env and replace the Google OAuth authorization keys with real ones obtained from your Google Console OAuth.  
 The values for POSTGRES_DB, POSTGRES_USER, and POSTGRES_PASSWORD should match the values from .env in root-v-boilerplate
  - Execute the command ```docker-compose build```
  - Launch the application using ```docker-compose up```
