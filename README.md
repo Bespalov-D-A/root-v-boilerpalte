@@ -1,7 +1,7 @@
 ## Root-v-boilerplate
 ###  Nginx
 
-This template is perfect for sharing with [React-v-boilerpalte](https://github.com/Bespalov-D-A/root-v-boilerpalte) and [NestJS-v-boilerplate](https://github.com/Bespalov-D-A/root-v-boilerpalte).
+This template is perfect for sharing with [React-v-boilerpalte](https://github.com/Bespalov-D-A/React-v-boilerplate) and [NestJS-v-boilerpalte](https://github.com/Bespalov-D-A/NestJS-v-boilerplate).
 This template is ideal for use with root-v-boilerpalte, although you can use it separately.
 If you are using a combination with React-V-Boilerpalte, read [HERE](https://github.com/Bespalov-D-A/root-v-boilerpalte)
  how to combine these Boilerpaltes.
