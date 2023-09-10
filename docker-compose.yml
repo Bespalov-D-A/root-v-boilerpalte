@@ -20,7 +20,7 @@ services:
     volumes:
       - ./server:/server
     env_file:
-      - .env
+      - ./server/.env
     ports:
       - 5000:5000
     environment:
