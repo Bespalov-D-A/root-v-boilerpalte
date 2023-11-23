@@ -9,9 +9,9 @@ services:
     volumes:
       - ./client:/app
     env_file:
-      - .env
+      - ./client/.env
     ports:
-      - 8081:3001
+      - 3001:3001
 
   v_server:
     build:
@@ -36,7 +36,12 @@ services:
     ports:
       - 4001:5432
     volumes:
-      - ./database:/var/lib/postgresql/data
+      - "db-v-storage:/var/lib/postgresql/data"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -h localhost -p 5432"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
 
   adminer:
     image: adminer
@@ -54,3 +59,6 @@ services:
       - v_db
       - v_client
       - v_server
+
+volumes:
+  db-v-storage:
