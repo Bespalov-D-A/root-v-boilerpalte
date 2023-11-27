@@ -1,7 +1,7 @@
 ## Root-v-boilerplate
 ###  Nginx
 
-This template is perfect for sharing with [React-v-boilerpalte](https://github.com/Bespalov-D-A/React-v-boilerplate) and [NestJS-v-boilerpalte](https://github.com/Bespalov-D-A/NestJS-v-boilerplate).
+This template is perfect for sharing with [React-v-boilerpalte](https://github.com/Bespalov-D-A/React-v-boilerplate) or [React-y-boilerpalte](https://github.com/Bespalov-D-A/react-y-boilerplate) and [NestJS-v-boilerpalte](https://github.com/Bespalov-D-A/NestJS-v-boilerplate).
 #####  Using
 - Clone the current repository
 - Rename the .example.env file to .env
